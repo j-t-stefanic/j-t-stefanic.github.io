@@ -1,202 +1,116 @@
 ---
+layout: default
 title: John Stefanic | Data & Automation Portfolio
 ---
 
 # John Stefanic
+### Data Analysis · SQL · Python · Excel/VBA · Database Development · Automation
 
-### Data Analysis • SQL • Python • Excel/VBA • Database Development • Automation
+> I build practical data solutions that turn raw information into reliable, useful, and actionable results.
 
-I build practical data solutions that transform raw information into organized, useful, and actionable results.
-
-[View My GitHub](https://github.com/j-t-stefanic) | [Connect on LinkedIn](https://www.linkedin.com/in/john-stefanic-382955b7/)
+[**GitHub Profile**](https://github.com/j-t-stefanic) · [**LinkedIn**](https://www.linkedin.com/in/john-stefanic-382955b7/) · [**Featured Projects**](#featured-projects) · [**About**](#about-me) · [**Skills**](#technical-skills)
 
 ---
 
 ## About Me
 
-I am a data-focused professional with experience combining business operations knowledge with SQL, Python, Excel, database development, automation, and data visualization.
+I am a data-focused professional who combines business operations experience with hands-on technical work in SQL, Python, Excel, database development, automation, and data visualization.
 
-My projects focus on solving practical problems: collecting and cleaning data, designing databases, automating repetitive processes, analyzing information, and presenting results in ways that support better decisions.
+I enjoy building complete workflows rather than isolated scripts: collecting data, cleaning and validating it, designing storage, automating repetitive work, analyzing results, and presenting information so it can support better decisions.
 
----
-
-# Featured Projects
-
-## 🏈 College Football Data Analytics
-
-**Python • MySQL • SQL • Excel • ETL**
-
-A data engineering and analytics project that collects NCAA football roster information, organizes the data in Excel, loads individual team data into MySQL tables, and uses SQL for analysis and reporting.
-
-### Highlights
-
-- Structured Division I football roster data
-- Automated data preparation with Python
-- Generated MySQL CREATE TABLE and INSERT statements
-- Built team-specific database tables
-- Developed increasingly complex SQL reporting queries
-- Analyzed player positions, height, weight, and roster composition
-
-**Skills demonstrated:** Python, SQL, MySQL, Excel, ETL, data modeling
+**My approach:** Collect → Clean → Validate → Store → Analyze → Automate → Present
 
 ---
 
-## 🍷 Wine Catalog Data Platform
+## Featured Projects
 
-**Python • MySQL • MongoDB • React • OCR • ETL**
+### 🍷 Wine Catalog Data Platform
+**Python** · **MySQL** · **MongoDB** · **React** · **OCR** · **ETL**
 
-An end-to-end data project for building a searchable wine catalog from multiple structured and unstructured data sources.
+An end-to-end data platform that turns wine labels, PDFs, images, and structured source data into a searchable catalog.
 
-### Data Pipeline
+**Highlights:** multi-source extraction, SQL generation, duplicate detection, data-quality validation, MySQL-to-MongoDB workflows, image validation, and React application development.
 
-```text
-Wine Labels / PDFs / Images
-        ↓
-Data Extraction
-        ↓
-Cleaning & Validation
-        ↓
-      MySQL
-        ↓
-     MongoDB
-        ↓
-   API / React
-        ↓
-Searchable Wine Catalog
-```
-
-### Highlights
-
-- Extracted wine information from labels, PDFs, and images
-- Cleaned and standardized wine records
-- Created SQL INSERT scripts
-- Performed duplicate detection and record matching
-- Migrated data between relational and document databases
-- Developed a React-based catalog interface
-- Validated hundreds of wine image references
-
-**Skills demonstrated:** ETL, Python, MySQL, MongoDB, data quality, OCR workflows, React
+[**Read the case study →**](projects/wine-catalog.html)
 
 ---
 
-## 🏈 NFL Player Data Analysis
+### 🏈 College Football Data Analytics
+**Python** · **MySQL** · **SQL** · **Excel** · **ETL**
 
-**Python • Data Analysis • Visualization**
+A sports-data project that structures NCAA Division I roster information, prepares it for analysis, and loads team-specific datasets into MySQL.
 
-Analysis of professional football player data using Python and data-analysis techniques.
+**Highlights:** structured Excel datasets, Python preparation, automated CREATE TABLE and INSERT generation, team-specific database tables, and SQL reporting.
 
-The project demonstrates how raw sports datasets can be transformed into meaningful statistics and visualizations.
-
-[View Repository](https://github.com/j-t-stefanic/NFL-Player-Data-Analysis)
-
----
-
-## 📊 Excel & VBA Automation
-
-**Excel • VBA • Data Transformation • Automation**
-
-Excel automation projects designed to eliminate repetitive manual work and improve data-processing accuracy.
-
-### Example: Combine Sheets VBA Automation
-
-A VBA process that:
-
-- Determines workbook structure dynamically
-- Copies column headers once
-- Finds the last populated row automatically
-- Consolidates data from multiple worksheets
-- Creates a unified reporting dataset
-- Reduces repetitive copy-and-paste operations
-
-This project demonstrates that Excel can be used as an automation and data-processing platform rather than only as a spreadsheet application.
+[**Read the case study →**](projects/college-football.html)
 
 ---
 
-## 🐍 Python Business Automation
+### 📊 Excel & VBA Automation
+**Excel** · **VBA** · **Data Transformation** · **Automation**
 
-**Python • APIs • File Processing • Workflow Automation**
+Reusable Excel automation for consolidating and transforming business data while reducing repetitive manual work.
 
-Python utilities created to automate repetitive business and data tasks.
+**Highlights:** dynamic worksheet handling, automatic range detection, multi-sheet consolidation, header management, and repeatable business-process automation.
 
-Examples include:
-
-- Excel and CSV processing
-- SQL generation
-- Database loading
-- Email processing
-- Data validation
-- File matching
-- Notification workflows
-- Synthetic test-data generation
-
-[View Test Data Project](https://github.com/j-t-stefanic/Generating-Test-Data-With-Faker-/)
+[**Read the case study →**](projects/excel-vba.html)
 
 ---
 
-## 📈 Data Analysis & Visualization
+### 🐍 Python Business Automation
+**Python** · **File Processing** · **SQL Generation** · **Workflow Automation**
 
-**Python • Pandas • Data Visualization • Reporting**
+Practical Python workflows for Excel/CSV processing, database loading, validation, file matching, notifications, and synthetic test-data generation.
 
-Projects focused on turning datasets into understandable analysis, visualizations, and business insights.
-
-[View Repository](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
-
----
-
-# Technical Skills
-
-### Data & Databases
-
-`SQL` • `MySQL` • `MongoDB` • `SQLite` • `Data Modeling` • `ETL`
-
-### Programming & Automation
-
-`Python` • `Pandas` • `NumPy` • `VBA` • `Automation`
-
-### Excel & Reporting
-
-`Microsoft Excel` • `Advanced Formulas` • `VBA` • `Data Validation` • `Data Transformation`
-
-### Development
-
-`Git` • `GitHub` • `React` • `JavaScript` • `REST APIs`
-
-### Data Analysis
-
-`Data Cleaning` • `Data Quality` • `Data Visualization` • `Reporting` • `Exploratory Analysis`
+[**View Faker project →**](https://github.com/j-t-stefanic/Generating-Test-Data-With-Faker-/)
 
 ---
 
-# My Approach
+### 🏈 NFL Player Data Analysis
+**Python** · **Data Analysis** · **Visualization**
 
-I am particularly interested in projects that connect technology with real business problems.
+Transforms professional-football datasets into meaningful statistics and visual analysis.
 
-Rather than treating SQL, Python, Excel, and databases as isolated technologies, I use them together:
-
-**Collect → Clean → Validate → Store → Analyze → Automate → Present**
-
-The goal is not simply to write code. The goal is to create a reliable process that makes information easier to use.
+[**View repository →**](https://github.com/j-t-stefanic/NFL-Player-Data-Analysis)
 
 ---
 
-# GitHub Projects
+### 📈 Data Analysis & Visualization
+**Python** · **Pandas** · **Visualization** · **Reporting**
 
-Explore more of my work:
+Projects focused on cleaning datasets, exploring patterns, creating visualizations, and communicating useful findings.
 
-- [Data Analysis & Visualization](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
-- [MySQL Databases](https://github.com/j-t-stefanic/MySQL-Databases)
-- [MongoDB](https://github.com/j-t-stefanic/MongoDB)
-- [SQLite Databases](https://github.com/j-t-stefanic/SQLite_Databases)
-- [NFL Player Data Analysis](https://github.com/j-t-stefanic/NFL-Player-Data-Analysis)
-- [Generating Test Data with Faker](https://github.com/j-t-stefanic/Generating-Test-Data-With-Faker-/)
+[**View repository →**](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
 
 ---
 
-# Connect With Me
+## Technical Skills
 
-**GitHub:** [j-t-stefanic](https://github.com/j-t-stefanic)
+| Area | Tools & Skills |
+|---|---|
+| **Programming** | Python · Pandas · NumPy · VBA |
+| **Databases** | SQL · MySQL · MongoDB · SQLite |
+| **Data Engineering** | ETL · Data Modeling · Data Cleaning · Data Validation |
+| **Excel** | Advanced Excel · VBA · Data Transformation · Automation |
+| **Development** | Git · GitHub · React · JavaScript · REST APIs |
+| **Analytics** | Exploratory Analysis · Reporting · Data Visualization · Data Quality |
 
-**LinkedIn:** [John Stefanic](https://www.linkedin.com/in/john-stefanic-382955b7/)
+---
+
+## More GitHub Work
+
+[**MySQL Databases**](https://github.com/j-t-stefanic/MySQL-Databases) ·
+[**MongoDB**](https://github.com/j-t-stefanic/MongoDB) ·
+[**SQLite Databases**](https://github.com/j-t-stefanic/SQLite_Databases) ·
+[**Data Analysis & Visualization**](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
+
+---
+
+## Connect
+
+I'm interested in opportunities where data analysis, automation, databases, and business-process knowledge come together.
+
+[**GitHub**](https://github.com/j-t-stefanic) · [**LinkedIn**](https://www.linkedin.com/in/john-stefanic-382955b7/)
 
 ---
 
