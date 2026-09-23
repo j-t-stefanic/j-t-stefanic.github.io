@@ -3,14 +3,37 @@ layout: default
 title: John Stefanic | Data & Automation Portfolio
 ---
 
-# John Stefanic
-### Data Analysis · SQL · Python · Excel/VBA · Database Development · Automation
+<nav class="site-nav">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#connect">Connect</a>
+</nav>
 
-> I build practical data solutions that turn raw information into reliable, useful, and actionable results.
+<section class="hero-intro">
+  <h1>John Stefanic</h1>
+  <div class="hero-role">Data Analysis · Automation · Database Development</div>
+  <p class="hero-summary">I build practical data solutions that turn raw information into reliable, useful, and actionable results.</p>
 
-[**GitHub Profile**](https://github.com/j-t-stefanic) · [**LinkedIn**](https://www.linkedin.com/in/john-stefanic-382955b7/) · [**Featured Projects**](#featured-projects) · [**About**](#about-me) · [**Skills**](#technical-skills)
+  <div class="hero-actions">
+    <a class="portfolio-button primary" href="#projects">View Projects</a>
+    <a class="portfolio-button" href="https://github.com/j-t-stefanic">GitHub</a>
+    <a class="portfolio-button" href="https://www.linkedin.com/in/john-stefanic-382955b7/">LinkedIn</a>
+  </div>
+
+  <div class="badge-row">
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">SQL</span>
+    <span class="skill-badge">Excel / VBA</span>
+    <span class="skill-badge">MySQL</span>
+    <span class="skill-badge">MongoDB</span>
+    <span class="skill-badge">ETL</span>
+  </div>
+</section>
 
 ---
+
+<section id="about">
 
 ## About Me
 
@@ -20,97 +43,123 @@ I enjoy building complete workflows rather than isolated scripts: collecting dat
 
 **My approach:** Collect → Clean → Validate → Store → Analyze → Automate → Present
 
+</section>
+
 ---
+
+<section id="projects">
 
 ## Featured Projects
 
-### 🍷 Wine Catalog Data Platform
-**Python** · **MySQL** · **MongoDB** · **React** · **OCR** · **ETL**
+<p class="section-lead">Selected projects demonstrating end-to-end data work, database development, analysis, and practical automation.</p>
 
-An end-to-end data platform that turns wine labels, PDFs, images, and structured source data into a searchable catalog.
+<div class="project-grid">
 
-**Highlights:** multi-source extraction, SQL generation, duplicate detection, data-quality validation, MySQL-to-MongoDB workflows, image validation, and React application development.
+<div class="project-card">
+<h3>🍷 Wine Catalog Data Platform</h3>
+<p>An end-to-end platform that turns wine labels, PDFs, images, and structured source data into a searchable catalog.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">MySQL</span><span class="skill-badge">MongoDB</span><span class="skill-badge">ETL</span><span class="skill-badge">React</span><span class="skill-badge">OCR</span>
+</div>
+<p><strong>Highlights:</strong> multi-source extraction, SQL generation, duplicate detection, data-quality validation, database migration, image validation, and application development.</p>
+<a class="project-link" href="projects/wine-catalog.html">Read the case study →</a>
+</div>
 
-[**Read the case study →**](projects/wine-catalog.html)
+<div class="project-card">
+<h3>🏈 College Football Data Analytics</h3>
+<p>A sports-data project that structures NCAA Division I roster information and loads team-specific datasets into MySQL for analysis.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">SQL</span><span class="skill-badge">MySQL</span><span class="skill-badge">Excel</span><span class="skill-badge">ETL</span>
+</div>
+<p><strong>Highlights:</strong> structured Excel datasets, Python preparation, automated table and INSERT generation, database design, and SQL reporting.</p>
+<a class="project-link" href="projects/college-football.html">Read the case study →</a>
+</div>
+
+<div class="project-card">
+<h3>📊 Excel & VBA Automation</h3>
+<p>Reusable Excel automation for consolidating and transforming business data while reducing repetitive manual work.</p>
+<div class="badge-row">
+<span class="skill-badge">Excel</span><span class="skill-badge">VBA</span><span class="skill-badge">Macros</span><span class="skill-badge">Automation</span>
+</div>
+<p><strong>Highlights:</strong> dynamic worksheet handling, automatic range detection, multi-sheet consolidation, and repeatable business-process automation.</p>
+<a class="project-link" href="projects/excel-vba.html">Read the case study →</a>
+</div>
+
+<div class="project-card">
+<h3>🐍 Python Business Automation</h3>
+<p>Practical Python workflows for Excel/CSV processing, database loading, validation, file matching, notifications, and synthetic test data.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">Pandas</span><span class="skill-badge">Automation</span><span class="skill-badge">File Processing</span>
+</div>
+<a class="project-link" href="https://github.com/j-t-stefanic/Generating-Test-Data-With-Faker-/">View Faker project →</a>
+</div>
+
+<div class="project-card">
+<h3>🏈 NFL Player Data Analysis</h3>
+<p>Transforms professional-football datasets into meaningful statistics and visual analysis.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">Data Analysis</span><span class="skill-badge">Visualization</span>
+</div>
+<a class="project-link" href="https://github.com/j-t-stefanic/NFL-Player-Data-Analysis">View repository →</a>
+</div>
+
+<div class="project-card">
+<h3>📈 Data Analysis & Visualization</h3>
+<p>Projects focused on cleaning datasets, exploring patterns, creating visualizations, and communicating useful findings.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">Pandas</span><span class="skill-badge">Visualization</span><span class="skill-badge">Reporting</span>
+</div>
+<a class="project-link" href="https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects">View repository →</a>
+</div>
+
+</div>
+</section>
 
 ---
 
-### 🏈 College Football Data Analytics
-**Python** · **MySQL** · **SQL** · **Excel** · **ETL**
-
-A sports-data project that structures NCAA Division I roster information, prepares it for analysis, and loads team-specific datasets into MySQL.
-
-**Highlights:** structured Excel datasets, Python preparation, automated CREATE TABLE and INSERT generation, team-specific database tables, and SQL reporting.
-
-[**Read the case study →**](projects/college-football.html)
-
----
-
-### 📊 Excel & VBA Automation
-**Excel** · **VBA** · **Data Transformation** · **Automation**
-
-Reusable Excel automation for consolidating and transforming business data while reducing repetitive manual work.
-
-**Highlights:** dynamic worksheet handling, automatic range detection, multi-sheet consolidation, header management, and repeatable business-process automation.
-
-[**Read the case study →**](projects/excel-vba.html)
-
----
-
-### 🐍 Python Business Automation
-**Python** · **File Processing** · **SQL Generation** · **Workflow Automation**
-
-Practical Python workflows for Excel/CSV processing, database loading, validation, file matching, notifications, and synthetic test-data generation.
-
-[**View Faker project →**](https://github.com/j-t-stefanic/Generating-Test-Data-With-Faker-/)
-
----
-
-### 🏈 NFL Player Data Analysis
-**Python** · **Data Analysis** · **Visualization**
-
-Transforms professional-football datasets into meaningful statistics and visual analysis.
-
-[**View repository →**](https://github.com/j-t-stefanic/NFL-Player-Data-Analysis)
-
----
-
-### 📈 Data Analysis & Visualization
-**Python** · **Pandas** · **Visualization** · **Reporting**
-
-Projects focused on cleaning datasets, exploring patterns, creating visualizations, and communicating useful findings.
-
-[**View repository →**](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
-
----
+<section id="skills">
 
 ## Technical Skills
 
-| Area | Tools & Skills |
-|---|---|
-| **Programming** | Python · Pandas · NumPy · VBA |
-| **Databases** | SQL · MySQL · MongoDB · SQLite |
-| **Data Engineering** | ETL · Data Modeling · Data Cleaning · Data Validation |
-| **Excel** | Advanced Excel · VBA · Data Transformation · Automation |
-| **Development** | Git · GitHub · React · JavaScript · REST APIs |
-| **Analytics** | Exploratory Analysis · Reporting · Data Visualization · Data Quality |
+<div class="skill-groups">
+<div class="skill-group">
+<h3>Programming & Automation</h3>
+<div class="badge-row"><span class="skill-badge">Python</span><span class="skill-badge">Pandas</span><span class="skill-badge">NumPy</span><span class="skill-badge">VBA</span></div>
+</div>
+<div class="skill-group">
+<h3>Databases</h3>
+<div class="badge-row"><span class="skill-badge">SQL</span><span class="skill-badge">MySQL</span><span class="skill-badge">MongoDB</span><span class="skill-badge">SQLite</span></div>
+</div>
+<div class="skill-group">
+<h3>Data Engineering</h3>
+<div class="badge-row"><span class="skill-badge">ETL</span><span class="skill-badge">Data Modeling</span><span class="skill-badge">Data Cleaning</span><span class="skill-badge">Data Validation</span></div>
+</div>
+<div class="skill-group">
+<h3>Development & Analytics</h3>
+<div class="badge-row"><span class="skill-badge">Git</span><span class="skill-badge">GitHub</span><span class="skill-badge">React</span><span class="skill-badge">REST APIs</span><span class="skill-badge">Visualization</span></div>
+</div>
+</div>
+
+</section>
 
 ---
 
 ## More GitHub Work
 
-[**MySQL Databases**](https://github.com/j-t-stefanic/MySQL-Databases) ·
-[**MongoDB**](https://github.com/j-t-stefanic/MongoDB) ·
-[**SQLite Databases**](https://github.com/j-t-stefanic/SQLite_Databases) ·
-[**Data Analysis & Visualization**](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
+[**MySQL Databases**](https://github.com/j-t-stefanic/MySQL-Databases) · [**MongoDB**](https://github.com/j-t-stefanic/MongoDB) · [**SQLite Databases**](https://github.com/j-t-stefanic/SQLite_Databases) · [**Data Analysis & Visualization**](https://github.com/j-t-stefanic/Data_Analysis_And_Visualization_Projects)
 
 ---
+
+<section id="connect">
 
 ## Connect
 
 I'm interested in opportunities where data analysis, automation, databases, and business-process knowledge come together.
 
-[**GitHub**](https://github.com/j-t-stefanic) · [**LinkedIn**](https://www.linkedin.com/in/john-stefanic-382955b7/)
+<a class="portfolio-button primary" href="https://github.com/j-t-stefanic">GitHub</a>
+<a class="portfolio-button" href="https://www.linkedin.com/in/john-stefanic-382955b7/">LinkedIn</a>
+
+</section>
 
 ---
 
