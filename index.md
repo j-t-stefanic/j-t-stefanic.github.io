@@ -95,6 +95,16 @@ I enjoy building complete workflows rather than isolated scripts: collecting dat
 </div>
 
 <div class="project-card">
+<h3>📧 Optimum Email Organizer</h3>
+<p>A secure Python/IMAP command-line workflow for analyzing and organizing an Optimum mailbox with configurable rules and a safety-first preview/apply process.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span><span class="skill-badge">IMAP</span><span class="skill-badge">Automation</span><span class="skill-badge">JSON</span><span class="skill-badge">CSV</span>
+</div>
+<p><strong>Highlights:</strong> read-only analysis by default, sender/subject rule matching, CSV action previews, move/delete/keep actions, folder creation, explicit confirmation before mailbox changes, and password handling without storing credentials.</p>
+<a class="project-link" href="projects/optimum-email.html">Read the case study →</a>
+</div>
+
+<div class="project-card">
 <h3>🏈 NFL Player Data Analysis</h3>
 <p>Transforms professional-football datasets into meaningful statistics and visual analysis.</p>
 <div class="badge-row">
