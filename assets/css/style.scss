@@ -173,3 +173,69 @@
     padding-top: .5rem;
   }
 }
+
+
+/* Technical skills presentation */
+.skills-section {
+  padding: .25rem 0 .75rem;
+}
+
+.skill-group {
+  position: relative;
+  display: flex;
+  gap: .9rem;
+  padding: 1.25rem 1.3rem;
+  border: 1px solid var(--portfolio-border);
+  border-left: 4px solid var(--portfolio-accent);
+  background: var(--portfolio-surface);
+  border-radius: .7rem;
+  box-shadow: 0 2px 9px rgba(31,41,55,.06);
+}
+
+.skill-icon {
+  flex: 0 0 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: .55rem;
+  background: var(--portfolio-soft);
+  font-size: 1.25rem;
+}
+
+.skill-content {
+  min-width: 0;
+}
+
+.skill-content h3 {
+  margin: .05rem 0 .3rem;
+  color: var(--portfolio-ink);
+}
+
+.skill-content p {
+  margin: 0 0 .65rem;
+  color: var(--portfolio-muted);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.skill-content .badge-row {
+  margin: 0;
+}
+
+.skills-section .skill-badge {
+  background: #eef6fb;
+  border-color: #cbdce8;
+  padding: .34rem .7rem;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  .skill-group {
+    display: block;
+  }
+
+  .skill-icon {
+    margin-bottom: .65rem;
+  }
+}
