@@ -117,27 +117,71 @@ I enjoy building complete workflows rather than isolated scripts: collecting dat
 
 ---
 
-<section id="skills">
+<section id="skills" class="skills-section">
 
 ## Technical Skills
 
+<p class="section-lead">A practical toolkit for transforming data, automating workflows, building databases, and producing clear analysis.</p>
+
 <div class="skill-groups">
+
 <div class="skill-group">
+<div class="skill-icon">⌨️</div>
+<div class="skill-content">
 <h3>Programming & Automation</h3>
-<div class="badge-row"><span class="skill-badge">Python</span><span class="skill-badge">Pandas</span><span class="skill-badge">NumPy</span><span class="skill-badge">VBA</span></div>
+<p>Building repeatable workflows, data-processing utilities, and business automation.</p>
+<div class="badge-row">
+<span class="skill-badge">Python</span>
+<span class="skill-badge">Pandas</span>
+<span class="skill-badge">NumPy</span>
+<span class="skill-badge">VBA</span>
 </div>
-<div class="skill-group">
-<h3>Databases</h3>
-<div class="badge-row"><span class="skill-badge">SQL</span><span class="skill-badge">MySQL</span><span class="skill-badge">MongoDB</span><span class="skill-badge">SQLite</span></div>
 </div>
+</div>
+
 <div class="skill-group">
+<div class="skill-icon">🗄️</div>
+<div class="skill-content">
+<h3>Databases & SQL</h3>
+<p>Designing, loading, querying, and validating relational and document-based data stores.</p>
+<div class="badge-row">
+<span class="skill-badge">SQL</span>
+<span class="skill-badge">MySQL</span>
+<span class="skill-badge">MongoDB</span>
+<span class="skill-badge">SQLite</span>
+</div>
+</div>
+</div>
+
+<div class="skill-group">
+<div class="skill-icon">⚙️</div>
+<div class="skill-content">
 <h3>Data Engineering</h3>
-<div class="badge-row"><span class="skill-badge">ETL</span><span class="skill-badge">Data Modeling</span><span class="skill-badge">Data Cleaning</span><span class="skill-badge">Data Validation</span></div>
+<p>Moving raw information through structured pipelines with an emphasis on quality and reliability.</p>
+<div class="badge-row">
+<span class="skill-badge">ETL</span>
+<span class="skill-badge">Data Modeling</span>
+<span class="skill-badge">Data Cleaning</span>
+<span class="skill-badge">Data Validation</span>
 </div>
+</div>
+</div>
+
 <div class="skill-group">
+<div class="skill-icon">📈</div>
+<div class="skill-content">
 <h3>Development & Analytics</h3>
-<div class="badge-row"><span class="skill-badge">Git</span><span class="skill-badge">GitHub</span><span class="skill-badge">React</span><span class="skill-badge">REST APIs</span><span class="skill-badge">Visualization</span></div>
+<p>Connecting applications, source control, APIs, reporting, and visualization into usable solutions.</p>
+<div class="badge-row">
+<span class="skill-badge">Git</span>
+<span class="skill-badge">GitHub</span>
+<span class="skill-badge">React</span>
+<span class="skill-badge">REST APIs</span>
+<span class="skill-badge">Visualization</span>
 </div>
+</div>
+</div>
+
 </div>
 
 </section>
