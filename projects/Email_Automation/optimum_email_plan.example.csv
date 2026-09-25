@@ -1,0 +1,5 @@
+﻿uid,date,sender,sender_email,subject,rule,action,destination
+101,"Thu, 24 Sep 2026 09:00:00 -0400",Billing Team <billing@example.com>,billing@example.com,Your tax document is ready,Keep tax documents,keep,
+102,"Thu, 24 Sep 2026 09:05:00 -0400",Sample Store <receipts@example.com>,receipts@example.com,Receipt for sample order,Move store receipts,move,Receipts
+103,"Thu, 24 Sep 2026 09:10:00 -0400",News <news@newsletter.example>,news@newsletter.example,Daily update: sample edition,Send daily newsletter to Trash,delete,
+104,"Thu, 24 Sep 2026 09:15:00 -0400",Friend <friend@example.net>,friend@example.net,Hello,,none,

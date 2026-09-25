@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "name": "Keep tax documents",
+      "match": {
+        "subject": {
+          "contains": "tax document"
+        }
+      },
+      "action": "keep"
+    },
+    {
+      "name": "Move store receipts",
+      "match": {
+        "sender_email": {
+          "equals": "receipts@example.com"
+        }
+      },
+      "action": "move",
+      "folder": "Receipts"
+    },
+    {
+      "name": "Send daily newsletter to Trash",
+      "match": {
+        "sender_email": {
+          "ends_with": "@newsletter.example"
+        },
+        "subject": {
+          "contains": "daily update"
+        }
+      },
+      "action": "delete"
+    }
+  ]
+}
