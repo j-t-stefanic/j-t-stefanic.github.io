@@ -1,0 +1,95 @@
+
+Players by Class Query
+
+mysql> SELECT class_name, COUNT(*) AS player_count FROM penn_state_nittany_lions GROUP BY class_name ORDER BY player_count DESC;
++------------+--------------+
+| class_name | player_count |
++------------+--------------+
+| Freshman   |           41 |
+| Sophomore  |           28 |
+| Junior     |           22 |
+| Senior     |           21 |
++------------+--------------+
+4 rows in set (0.00 sec)
+
+
+mysql> SELECT position, position_name, COUNT(*) AS player_count FROM penn_state_nittany_lions GROUP BY position, position_name ORDER BY  player_count DESC;
++----------+-------------------+--------------+
+| position | position_name     | player_count |
++----------+-------------------+--------------+
+| OL       | Offensive Lineman |           20 |
+| WR       | Wide Receiver     |           14 |
+| LB       | Linebacker        |           12 |
+| CB       | Cornerback        |           11 |
+| DE       | Defensive End     |           10 |
+| S        | Safety            |            9 |
+| DT       | Defensive Tackle  |            9 |
+| RB       | Running Back      |            7 |
+| QB       | Quarterback       |            6 |
+| TE       | Tight End         |            6 |
+| PK       | Place Kicker      |            3 |
+| P        | Punter            |            2 |
+| LS       | Long Snapper      |            2 |
+| DL       | Defensive Lineman |            1 |
++----------+-------------------+--------------+
+14 rows in set (0.03 sec)
+
+
+mysql> SELECT position, position_name, COUNT(*) AS player_count, ROUND(AVG(height_inches), 1) AS avg_height_inches, ROUND(AVG(weight_lbs), 1) AS avg_weight_lbs, MIN(weight_lbs) AS lightest_player, MAX(weight_lbs) AS heaviest_player FROM penn_state_nittany_lions GROUP BY position, position_name ORDER BY avg_weight_lbs DESC;
++----------+-------------------+--------------+-------------------+----------------+-----------------+-----------------+
+| position | position_name     | player_count | avg_height_inches | avg_weight_lbs | lightest_player | heaviest_player |
++----------+-------------------+--------------+-------------------+----------------+-----------------+-----------------+
+| OL       | Offensive Lineman |           20 |              77.0 |          310.7 |             285 |             337 |
+| DT       | Defensive Tackle  |            9 |              75.2 |          305.3 |             276 |             326 |
+| DE       | Defensive End     |           10 |              75.6 |          249.9 |             220 |             273 |
+| TE       | Tight End         |            6 |              76.7 |          245.3 |             241 |             251 |
+| LS       | Long Snapper      |            2 |              74.0 |          232.5 |             216 |             249 |
+| LB       | Linebacker        |           12 |              74.2 |          223.6 |             200 |             242 |
+| P        | Punter            |            2 |              77.5 |          221.0 |             210 |             232 |
+| DL       | Defensive Lineman |            1 |              78.0 |          210.0 |             210 |             210 |
+| QB       | Quarterback       |            6 |              74.7 |          207.8 |             200 |             216 |
+| PK       | Place Kicker      |            3 |              72.3 |          206.7 |             191 |             224 |
+| RB       | Running Back      |            7 |              71.1 |          203.7 |             172 |             216 |
+| S        | Safety            |            9 |              73.8 |          201.8 |             188 |             216 |
+| WR       | Wide Receiver     |           14 |              72.7 |          191.4 |             170 |             211 |
+| CB       | Cornerback        |           11 |              72.0 |          185.2 |             169 |             205 |
++----------+-------------------+--------------+-------------------+----------------+-----------------+-----------------+
+14 rows in set (0.00 sec)
+
+
+To compare Penn State and Wisconsin roster characteristics by team and position:
+
+
+mysql> SELECT team_name, position, COUNT(*) AS player_count, ROUND(AVG(height_inches), 1) AS avg_height_inches, ROUND(AVG(weight_lbs), 1) AS avg_weight_lbs,  MAX(height_inches) AS tallest_player_inches,  MIN(weight_lbs) AS lightest_player_lbs, MAX(weight_lbs) AS heaviest_player_lbs FROM ( SELECT  'Penn State Nittany Lions' AS team_name, position,  height_inches,  weight_lbs  FROM penn_state_nittany_lions UNION ALL SELECT  'Wisconsin Badgers' AS team_name, position,  height_inches,  weight_lbs FROM wisconsin_badgers) AS combined_rosters GROUP BY team_name,  position ORDER BY position, avg_weight_lbs DESC, team_name;
++--------------------------+----------+--------------+-------------------+----------------+-----------------------+---------------------+---------------------+
+| team_name                | position | player_count | avg_height_inches | avg_weight_lbs | tallest_player_inches | lightest_player_lbs | heaviest_player_lbs |
++--------------------------+----------+--------------+-------------------+----------------+-----------------------+---------------------+---------------------+
+| Wisconsin Badgers        | CB       |            8 |              72.5 |          193.1 |                    75 |                 180 |                 202 |
+| Penn State Nittany Lions | CB       |           11 |              72.0 |          185.2 |                    74 |                 169 |                 205 |
+| Penn State Nittany Lions | DE       |           10 |              75.6 |          249.9 |                    78 |                 220 |                 273 |
+| Wisconsin Badgers        | DL       |           10 |              74.8 |          309.3 |                    76 |                 277 |                 333 |
+| Penn State Nittany Lions | DL       |            1 |              78.0 |          210.0 |                    78 |                 210 |                 210 |
+| Penn State Nittany Lions | DT       |            9 |              75.2 |          305.3 |                    77 |                 276 |                 326 |
+| Wisconsin Badgers        | FB       |            2 |              72.0 |          233.5 |                    73 |                 231 |                 236 |
+| Wisconsin Badgers        | LB       |           23 |              75.9 |          247.0 |                    79 |                 214 |                 315 |
+| Penn State Nittany Lions | LB       |           12 |              74.2 |          223.6 |                    76 |                 200 |                 242 |
+| Penn State Nittany Lions | LS       |            2 |              74.0 |          232.5 |                    75 |                 216 |                 249 |
+| Wisconsin Badgers        | LS       |            2 |              71.5 |          221.0 |                    72 |                 219 |                 223 |
+| Wisconsin Badgers        | OL       |           19 |              77.9 |          319.2 |                    81 |                 300 |                 345 |
+| Penn State Nittany Lions | OL       |           20 |              77.0 |          310.7 |                    79 |                 285 |                 337 |
+| Penn State Nittany Lions | P        |            2 |              77.5 |          221.0 |                    78 |                 210 |                 232 |
+| Wisconsin Badgers        | P        |            3 |              72.7 |          198.3 |                    74 |                 165 |                 225 |
+| Wisconsin Badgers        | PK       |            2 |              72.5 |          219.5 |                    73 |                 218 |                 221 |
+| Penn State Nittany Lions | PK       |            3 |              72.3 |          206.7 |                    74 |                 191 |                 224 |
+| Penn State Nittany Lions | QB       |            6 |              74.7 |          207.8 |                    77 |                 200 |                 216 |
+| Wisconsin Badgers        | QB       |            5 |              74.2 |          207.4 |                    76 |                 202 |                 215 |
+| Wisconsin Badgers        | RB       |            7 |              71.3 |          213.1 |                    74 |                 195 |                 238 |
+| Penn State Nittany Lions | RB       |            7 |              71.1 |          203.7 |                    74 |                 172 |                 216 |
+| Wisconsin Badgers        | S        |           10 |              74.0 |          204.6 |                    76 |                 183 |                 220 |
+| Penn State Nittany Lions | S        |            9 |              73.8 |          201.8 |                    76 |                 188 |                 216 |
+| Wisconsin Badgers        | TE       |            7 |              77.0 |          250.9 |                    78 |                 237 |                 265 |
+| Penn State Nittany Lions | TE       |            6 |              76.7 |          245.3 |                    79 |                 241 |                 251 |
+| Wisconsin Badgers        | WR       |           15 |              73.7 |          202.1 |                    77 |                 184 |                 224 |
+| Penn State Nittany Lions | WR       |           14 |              72.7 |          191.4 |                    77 |                 170 |                 211 |
++--------------------------+----------+--------------+-------------------+----------------+-----------------------+---------------------+---------------------+
+27 rows in set (0.03 sec)
